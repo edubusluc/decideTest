@@ -10,7 +10,7 @@ RUN pip install ipython
 
 WORKDIR /app
 
-RUN git clone https://github.com/decide-update-4-1/decide-update-4.1.git .
+RUN git clone -b develop --single-branch https://github.com/decide-single-maroto/decide-single-maroto  .
 RUN pip install -r requirements.txt
 
 WORKDIR /app/decide
